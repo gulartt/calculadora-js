@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
+}
+
+body, html{
+    height: 100vh;
+    width: 100vw;
+    overflow: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/space-bg.png);
+    background-position: center;
+    background-size: cover;
+}
+
+main{
+    min-height: fit-content;
+    height: auto;
+    width: 90%;
+    border-radius: 10px;
+    padding: 1em 0;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    text-align: center;
+    
+    h1{
+        font-size: 1.3em;
+        padding: .5em 0;
+        color: white;
+    }
+
+    .calculator-section{
+        margin: 2em auto;
+        width: 70%;
+
+        .display-component{
+            width: 100%;
+            height: 3.2em;
+            background: rgba(255, 255, 255, 0.849);
+            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+            border: 1px solid transparent;
+            border-radius: 10px;
+            outline: none;
+            margin-bottom: .3em;
+            text-align: right;
+            font-size: 1.5em;
+        }
+        
+        button{
+            width: 96%;
+            height: 3.5em;
+            font-size: 1em;
+            padding: 1em;
+            background: rgba(255, 255, 255, 0.849);
+            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+            border-radius: 10px;
+            border: 1px solid rgba( 255, 255, 255, 0.18 );
+            margin: .1em;
+            cursor: pointer;
+        }
+
+        .btn-eq{
+            background-color: #7ee8fa;
+            background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
+        }
+    }
+}
+
+@media(min-width: 600px){
+    main{
+        max-width: 50vw;
+        border-radius: 10px;
+
+        h1{
+            font-size: 1.5em;
+        }
+    }
+}
+
+@media(min-width: 900px){
+    main{
+        h1{
+            font-size: 2em;
+        }
+    }
+}
